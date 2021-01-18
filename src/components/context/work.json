@@ -1,0 +1,16 @@
+{
+  "experiences": [
+    {
+      "id": 1,
+      "company": "RagingBull",
+      "title": "web developer",
+      "descriptions": 
+      {
+          "description" : [
+          {"li1":"Responsible for creating a responsive design and layout of a Wordpress site by utilizing various plugins and custom contents built using clean coded HTML5, CSS, JavaScript"},
+          {"li2":"Utilizing Javascript to add functionally such as timer, countdown, redirects and many more to increase engagement and sales."}
+          ]
+        }
+    }
+  ]
+}
