@@ -72,7 +72,9 @@ html {
   height: 80px;
   margin: -100px 0 0;
 }
-
+.container{
+  max-width: 1240px;
+}
 nav {
   padding-top: 1em;
   .logo {
@@ -85,10 +87,15 @@ nav {
     &:hover {
       transform: rotate(360deg);
     }
-    @include mobile{
+    @include tablet {
+      margin-left: 1em;
+      margin-top: 5px;
+      width: 40px;
+    }
+    @include mobile {
       margin-left: 1em;
       margin-top: 15px;
-          width: 30px;
+      width: 30px;
     }
   }
   .nav-link {
@@ -99,8 +106,11 @@ nav {
       color: $color-secondary;
       transform: translateX(10px);
     }
-    @include mobile{
-          font-size: .7em;
+    @include tablet {
+      font-size: 1em;
+    }
+    @include mobile {
+      font-size: 0.7em;
     }
   }
   @include mobile {
@@ -146,20 +156,35 @@ nav {
   }
 }
 .footerm {
+  display: flex;
+  flex-direction: row;
   a {
     font-family: $font-header;
     text-decoration: none;
+    transition: 0.25s all ease;
     &:hover {
       color: $color-secondary;
-      transform: translateX(10px);
     }
   }
   p {
     position: fixed;
+    display: flex;
+    flex-direction: row;
     left: 95vw;
     bottom: 0;
     transform: rotate(-90deg);
     transform-origin: 0 0;
+    img {
+      transform: rotate(90deg);
+      margin-left: 10px;
+      width: 30px;
+      filter: invert(84%) sepia(80%) saturate(6972%) hue-rotate(327deg)
+        brightness(95%) contrast(92%);
+      transition: 0.5s all ease;
+      &:hover {
+        transform: rotate(450deg);
+      }
+    }
   }
   @include mobile {
     display: none;
@@ -240,6 +265,7 @@ nav {
 //skills component
 .profile {
   margin-top: 6em;
+  padding: 0 7em;
   h1 {
     font-size: 3.5em;
   }
@@ -270,13 +296,16 @@ nav {
         font-size: 1.4em;
         margin-left: 2em;
         text-align: right;
+        @include mobile {
+          margin-bottom: .3rem;
+        }
       }
       @include mobile {
         display: block;
       }
     }
     @include mobile {
-      margin-top: 10em;
+      margin-top: 7em;
       padding: 0 20px;
     }
   }
@@ -309,6 +338,10 @@ nav {
         max-width: 50px;
       }
     }
+          @include mobile {
+    margin: 2em 1em;
+
+          }
   }
   img {
     transition: 0.5s all ease;
@@ -316,13 +349,16 @@ nav {
       transform: scale(1.2);
     }
   }
+  @include mobile{
+    padding: 0em 1em;
+  }
 }
 
 .project-container {
-  padding: 0 1em;
+  padding: 0 7em;
   .project {
     margin-bottom: 5em;
-    margin-top: 6em;
+    margin-top: 7em;
 
     .title {
       display: flex;
@@ -336,7 +372,7 @@ nav {
         -webkit-text-stroke: 2px $color-secondary;
         font-weight: 600;
         opacity: 0.5;
-        @include mobile{
+        @include mobile {
           font-size: 8em;
         }
       }
@@ -355,14 +391,18 @@ nav {
         background: #edcb5044;
         border-radius: 50px;
         padding: 10px 15px;
-            margin-bottom: 10px;
+        margin-bottom: 10px;
       }
     }
     .img-container {
       display: grid;
+      justify-content: center;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       img {
-        max-width: 350px;
+        max-width: 335px;
+        @include tablet {
+          max-width: 100%;
+        }
         @include mobile {
           max-width: 100%;
         }
@@ -379,7 +419,8 @@ nav {
       justify-content: center;
     }
   }
-  @include mobile {
-    margin-top: 10em;
+    @include mobile{
+    padding: 0em 1em;
   }
+
 }

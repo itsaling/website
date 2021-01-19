@@ -55,7 +55,45 @@ const initalState = {
   ],
   projects: [
     {
-      id: 0,
+      id: 1,
+      title: "Its Aling",
+      year: "2020",
+      development: {
+        dev1: "web design",
+        dev2: "web development",
+      },
+      language: {
+        lang1: "HTML",
+        lang2: "SCSS",
+        lang3: "Bootstrap",
+        lang4: "Gulp",
+        lang5: "JavaScript",
+        lang6: "React.js",
+      },
+      images: {
+        img1:
+          "https://user-images.githubusercontent.com/54334129/105059704-9260e900-5a45-11eb-8313-8e814747ac88.JPG",
+        img2:
+          "https://user-images.githubusercontent.com/54334129/105059705-9260e900-5a45-11eb-9d41-d155dfe114e7.JPG",
+        img3:
+          "https://user-images.githubusercontent.com/54334129/105059706-9260e900-5a45-11eb-8ad3-9aff9ad95448.JPG",
+      },
+      descriptions: {
+        info1:
+          "This is a redesign of my original web portfolio using React.js along with context API to store data regarding experiences, and projects so new data can be easily added and display without duplicating the div content.",
+        info2:
+          "When I was trying to update my web portfolio through the old site I find myself being confused with the code because everything was stored on the page and I would have to duplicate the existing container and substitute the content. React made it easier for me to add new content and have it stored elsewhere, which I find that way to be more organize and I now have a single point of storage of data.",
+        info3:
+          "I still have a lot to learn on React.js. The beginning stage of learning is always the most difficult part over time I begin to enjoy the framework and see its benefit for real-life application",
+      },
+      challenges: {
+        challenge1:
+          "Some of the challenges I faced and learn to solve was how to structure my state in my GlobalContext and parsing through a nested object.",
+      },
+      button: "https://moviessuggests.herokuapp.com/",
+    },
+    {
+      id: 2,
       title: "Movies",
       year: "2020",
       development: {
@@ -72,24 +110,26 @@ const initalState = {
       },
       images: {
         img1:
-          "https://drive.google.com/file/d/1EqK6qG632IRNdAACNjSGUisRndsJX51e/view?usp=sharing",
+          "https://user-images.githubusercontent.com/54334129/105059297-1ff00900-5a45-11eb-84fc-6e438e858bd6.JPG",
         img2:
-          "https://itsaling.github.io/Assets/Photo/itsaling/itsaling-profile.png",
+          "https://user-images.githubusercontent.com/54334129/105059299-20889f80-5a45-11eb-9e4a-37459fe80501.JPG",
         img3:
-          "https://itsaling.github.io/Assets/Photo/itsaling/itsaling-work.png",
+          "https://user-images.githubusercontent.com/54334129/105059300-20889f80-5a45-11eb-986b-483e07b6e281.JPG",
       },
       descriptions: {
         info1:
-          "Movies is a React based web application that makes a call to The MovieDB API using axios and display movies based on popularity, trends, upcoming etc.",
+          "Movies is a React-based web application that calls to The MovieDB API using Axios and displays movies based on popularity, trends, upcoming, etc.",
       },
       challenges: {
         challenge1:
-          "This was one of the first project I created when I was learning React framework so there were many challenges that I faced such as working with state, props and how components works together.",
+          "This was one of the first projects I created when I was learning the React framework so there were many challenges that I faced such as working with state, props, and how components work together.",
+        challenge2:
+          "Additionally, the favorite component is giving a bit of an issue at the moment. This is due to how to store my data is in the App.js itself. Ideally, I want to go back and move the data to be in a context and use a reducer to handle different functionality the app might have.",
       },
       button: "https://moviessuggests.herokuapp.com/",
     },
     {
-      id: 2,
+      id: 3,
       title: "Dashboard",
       year: "2020",
       development: {
@@ -105,15 +145,16 @@ const initalState = {
         lang6: "React.js",
       },
       images: {
-        img1: "https://itsaling.github.io/Assets/Photo/itsaling/itsaling.png",
+        img1:
+          "https://user-images.githubusercontent.com/54334129/105059236-0cdd3900-5a45-11eb-99d3-87cb1ee09781.JPG",
         img2:
-          "https://itsaling.github.io/Assets/Photo/itsaling/itsaling-profile.png",
+          "https://user-images.githubusercontent.com/54334129/105059236-0cdd3900-5a45-11eb-99d3-87cb1ee09781.JPG",
         img3:
-          "https://itsaling.github.io/Assets/Photo/itsaling/itsaling-work.png",
+          "https://user-images.githubusercontent.com/54334129/105059236-0cdd3900-5a45-11eb-99d3-87cb1ee09781.JPG",
       },
       descriptions: {
         info1:
-          "Dashboard is a React based web application that makes up of different widgets. The main purpose of this project was to learn/understand how to parse different API and separate each components and understanding the basic of passing state as props.",
+          "Dashboard is a React-based web application that makes up of different widgets. The main purpose of this project was to learn/understand how to parse different APIs and separate each component and understanding the basics of passing state as props.",
       },
       challenges: {
         challenge1: "",
@@ -121,7 +162,40 @@ const initalState = {
       button: "https://react-dashboard-1.herokuapp.com/",
     },
     {
-      id: 1,
+      id: 4,
+      title: "Covid",
+      year: "2020",
+      development: {
+        dev1: "web design",
+        dev2: "web development",
+      },
+      language: {
+        lang1: "HTML",
+        lang2: "SCSS",
+        lang3: "Bootstrap",
+        lang4: "Gulp",
+        lang5: "JavaScript",
+        lang6: "React.js",
+      },
+      images: {
+        img1:
+          "https://user-images.githubusercontent.com/54334129/105059032-de5f5e00-5a44-11eb-8e21-700a6c48580c.JPG",
+        img2:
+          "https://user-images.githubusercontent.com/54334129/105059091-ecad7a00-5a44-11eb-8cbe-98863a57250f.JPG",
+      },
+      descriptions: {
+        info1:
+          "Covid is a React-based application that calls to The Covid Tracking Project API for data regarding the current state of the pandemic.",
+        info2:
+          "The main purpose of this project is to utilize context API to store data and recall it using useContext instead of storing data in the App.js and prop drilling.",
+      },
+      challenges: {
+        challenge1: "",
+      },
+      button: "https://github.com/itsaling/covid-report-react",
+    },
+    {
+      id: 5,
       title: "It's Aling",
       year: "2019",
       development: {
@@ -143,20 +217,20 @@ const initalState = {
       },
       descriptions: {
         info1:
-          "As you can already tell, its Aling is a website that I both designed and developed to showcase my portfolio and skill set as a front-end web developer.",
+          "Its Aling is a website that I both designed and developed to showcase my portfolio and skill set as a front-end web developer.",
         info2:
           "I utilized Adobe XD to wireframe, design, and prototype the web site before actually developing the HTML structure because it’s much easier to have a vision and layout before spending time developing it blindly. To build the site I took advantage of libraries such as jquery, and anime.js to add simple animations to the site to provide visual interest.",
       },
       challenges: {
         challenge1:
-          "Designing the website initally was the most challenging part because I wanted the website to reflect my personality while maintaining a clean and modern style. I’ve spent a lot of time creating different versions of the site, I've experimented with different color schemes, and I've searched for inspiration on sites like Awwwards, dribble, and Pinterest. Eventually, I landed on this current design to which I feel channels my style and personality.",
+          "Designing the website initially was the most challenging part because I wanted the website to reflect my personality while maintaining a clean and modern style. I’ve spent a lot of time creating different versions of the site, I've experimented with different color schemes, and I've searched for inspiration on sites like Awwwards, dribble, and Pinterest. Eventually, I landed on this current design to which I feel channels my style and personality.",
         challenge2:
           "Another challenge I faced was building the website itself. There were times where I would get stuck with CSS positioning and making the site responsive. With lots of practice spent learning from other sources, I was able to accomplish my vision within the first week of development.",
       },
       button: "https://itsaling.github.io/index.html",
     },
     {
-      id: 2,
+      id: 6,
       title: "Devtamin",
       year: "2019",
       development: {
@@ -190,7 +264,7 @@ const initalState = {
       button: "https://itsaling.github.io/devtamin.github.io/",
     },
     {
-      id: 3,
+      id: 7,
       title: "ManeChoice",
       year: "2019",
       development: {
@@ -214,7 +288,7 @@ const initalState = {
       },
       descriptions: {
         info1:
-          "ManeChoice recommends hair products to the users based on their hair types. By utilizing our inital screening questions, the everyday user can navigate the complex world of hair types with ease.",
+          "ManeChoice recommends hair products to the users based on their hair types. By utilizing our initial screening questions, the everyday user can navigate the complex world of hair types with ease.",
         info2:
           "Our app utilizes series of different activities for each question we ask the user to select. (Total of 6 questions).",
       },
@@ -229,7 +303,7 @@ const initalState = {
       button: "https://github.com/itsaling/ManeChoice",
     },
     {
-      id: 4,
+      id: 8,
       title: "Find My Paws",
       year: "2017",
       development: {
@@ -253,19 +327,15 @@ const initalState = {
       },
       descriptions: {
         info1:
-          "ManeChoice recommends hair products to the users based on their hair types. By utilizing our inital screening questions, the everyday user can navigate the complex world of hair types with ease.",
+          "As fellow pet owners, we all love our pets and would do anything for them. Sadly, on occasion pets have been known to run away or get lost during terrible natural disasters. In repsonse, we founded a web application that would allow us to connect with those whom have lost or found pets.",
         info2:
-          "Our app utilizes series of different activities for each question we ask the user to select. (Total of 6 questions).",
+          "Find My Paws is a dynamic web application,functioning as a virtual bulletin board dedicated for users to post information, search for, and find their lost pets.",
       },
       challenges: {
         challenge1:
-          "For the product recommendations, my team hosted our data through My Json Server (GitHub Repo). Next we made a network call to the server to retrieve the products.",
-        challenge2:
-          "With the time limitations, we prioritized functionality by narrowing our variables to: Hair Type, Absorbency, and Fullness. As for the products, we broke it down to 4 varibles: lightweight, normal, heavyweight and volumizing products.",
-        challenge3:
-          "Furthermore, the JSON server had a data limitation of 10,000 contents so we had to host the JSON on two repositories.",
+          "Due to the lack of experience in PHP, my team and I had a hard time creating validations of various users via their email and username.",
       },
-      button: "https://github.com/itsaling/ManeChoice",
+      button: "https://github.com/itsaling/FindMyPaw",
     },
   ],
 };
