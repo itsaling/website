@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Route exact path="/">
+      <Route exact path="/website">
         <div className="container">
           <Home />
         </div>

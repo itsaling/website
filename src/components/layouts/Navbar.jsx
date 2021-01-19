@@ -6,12 +6,12 @@ export const Navbar = () => {
   return (
     <div className="container-fluid" id="top">
       <nav className="nav fixed-top justify-content-between">
-        <Link to="/" className="nav-brand justify-content-start">
+        <Link to="/website" className="nav-brand justify-content-start">
           <Logo className="logo" />
         </Link>
 
         <div className="justify-content-start">
-          <Link to="/" className="nav-link">
+          <Link to="/website" className="nav-link">
             Home
           </Link>
 
