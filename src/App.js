@@ -33,7 +33,7 @@ function App() {
       <Route path="/projects">
         <>
           <ScrollProjects />
-          <div className="container">
+          <div className="container project-container">
             <Projects />
           </div>
         </>

@@ -71,7 +71,8 @@ const initalState = {
         lang6: "React.js",
       },
       images: {
-        img1: "https://itsaling.github.io/Assets/Photo/itsaling/itsaling.png",
+        img1:
+          "https://drive.google.com/file/d/1EqK6qG632IRNdAACNjSGUisRndsJX51e/view?usp=sharing",
         img2:
           "https://itsaling.github.io/Assets/Photo/itsaling/itsaling-profile.png",
         img3:
