@@ -5,7 +5,7 @@ export const Projects = () => {
   return (
     <>
       {projects.map((project) => (
-        <div className="project" key={project.id}>
+        <div className="project" key={project.id} id={project.id}>
           <div className="title">
             <h1 className="year">{project.title}</h1>
             <h2 className="p-name">{project.year}</h2>

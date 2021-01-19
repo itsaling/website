@@ -55,6 +55,71 @@ const initalState = {
   ],
   projects: [
     {
+      id: 0,
+      title: "Movies",
+      year: "2020",
+      development: {
+        dev1: "web design",
+        dev2: "web development",
+      },
+      language: {
+        lang1: "HTML",
+        lang2: "SCSS",
+        lang3: "Bootstrap",
+        lang4: "Gulp",
+        lang5: "JavaScript",
+        lang6: "React.js",
+      },
+      images: {
+        img1: "https://itsaling.github.io/Assets/Photo/itsaling/itsaling.png",
+        img2:
+          "https://itsaling.github.io/Assets/Photo/itsaling/itsaling-profile.png",
+        img3:
+          "https://itsaling.github.io/Assets/Photo/itsaling/itsaling-work.png",
+      },
+      descriptions: {
+        info1:
+          "Movies is a React based web application that makes a call to The MovieDB API using axios and display movies based on popularity, trends, upcoming etc.",
+      },
+      challenges: {
+        challenge1:
+          "This was one of the first project I created when I was learning React framework so there were many challenges that I faced such as working with state, props and how components works together.",
+      },
+      button: "https://moviessuggests.herokuapp.com/",
+    },
+    {
+      id: 2,
+      title: "Dashboard",
+      year: "2020",
+      development: {
+        dev1: "web design",
+        dev2: "web development",
+      },
+      language: {
+        lang1: "HTML",
+        lang2: "SCSS",
+        lang3: "Bootstrap",
+        lang4: "Gulp",
+        lang5: "JavaScript",
+        lang6: "React.js",
+      },
+      images: {
+        img1: "https://itsaling.github.io/Assets/Photo/itsaling/itsaling.png",
+        img2:
+          "https://itsaling.github.io/Assets/Photo/itsaling/itsaling-profile.png",
+        img3:
+          "https://itsaling.github.io/Assets/Photo/itsaling/itsaling-work.png",
+      },
+      descriptions: {
+        info1:
+          "Dashboard is a React based web application that makes up of different widgets. The main purpose of this project was to learn/understand how to parse different API and separate each components and understanding the basic of passing state as props.",
+      },
+      challenges: {
+        challenge1: "",
+      },
+      button: "https://react-dashboard-1.herokuapp.com/",
+    },
+    {
       id: 1,
       title: "It's Aling",
       year: "2019",
@@ -64,10 +129,9 @@ const initalState = {
       },
       language: {
         lang1: "HTML",
-        lang2: "CSS",
-        lang3: "SCSS",
-        lang4: "JavaScript",
-        lang5: "JQuery",
+        lang2: "SCSS",
+        lang3: "JavaScript",
+        lang4: "JQuery",
       },
       images: {
         img1: "https://itsaling.github.io/Assets/Photo/itsaling/itsaling.png",

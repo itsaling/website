@@ -6,6 +6,10 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Home } from "./components/layouts/Home";
 import { Contact } from "./components/layouts/profile/Contact";
 import { Projects } from "./components/layouts/projects/Projects";
+import { Footer } from "./components/Footer";
+import { Scroll } from "./components/layouts/profile/Scroll";
+import { ScrollProjects } from "./components/layouts/projects/ScrollProjects";
+import { ScrollTop } from "./components/ScrollTop";
 
 function App() {
   return (
@@ -17,17 +21,25 @@ function App() {
         </div>
       </Route>
       <Route path="/profile">
-        <div className="container profile">
-          <Skills />
-          <Experiences />
-          <Contact />
-        </div>
+        <>
+          <Scroll />
+          <div className="container profile">
+            <Skills />
+            <Experiences />
+            <Contact />
+          </div>
+        </>
       </Route>
       <Route path="/projects">
-        <div className="container">
-          <Projects />
-        </div>
+        <>
+          <ScrollProjects />
+          <div className="container">
+            <Projects />
+          </div>
+        </>
       </Route>
+      <ScrollTop />
+      <Footer />
     </Router>
   );
 }

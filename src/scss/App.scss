@@ -40,6 +40,15 @@ $color-bg: #f6f5ef;
 body {
   background-color: $color-bg;
 }
+html {
+  scroll-behavior: smooth;
+}
+:target:before{
+  content: "";
+  display: block;
+  height: 80px;
+  margin: -100px 0 0  ;
+}
 
 nav {
   margin-top: 1em;
@@ -62,12 +71,63 @@ nav {
     }
   }
 }
+.scroll-tab {
+  margin-left: 2em;
+  position: fixed;
+  top: 30%;
+  .arrow{
+    transform: translateX(1px);
+    margin-bottom: 5px;
+  }
+  .scroll1 {
+    margin-bottom: 0.5em;
+    a {
+      text-decoration: none;
+      transition: 0.25s all ease;
+      &:hover {
+        color: $color-secondary;
+          transform: rotate(360deg);        
+      }
+    }
+  }
+}
+.scroll-top{
+    margin-left: 2em;
+  position: fixed;
+  bottom: 3em;
+  img{
+    transform: scaleY(-1);
+    transition: .5s all ease;
+    &:hover{
+      // transform: rotate(180deg);
+      transform: scaleY(-1) translateY(20px);
+      // transform-origin: 0 0 ;
+    }
+  }
+}
+.footerm {
+  a {
+    font-family: $font-header;
+    text-decoration: none;
+    &:hover {
+      color: $color-secondary;
+      transform: translateX(10px);
+    }
+  }
+  p {
+    position: fixed;
+    left: 95vw;
+    bottom: 0;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+  }
+}
 
 .home {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 4em;
+  margin-top: 7em;
   h1 {
     font-size: 5em;
   }
@@ -95,12 +155,16 @@ nav {
 .btn-border {
   background: transparent;
   color: $color-main;
+  transition: 0.5s all ease-in-out;
   &:hover,
   &:active {
     border-bottom: 3px solid $color-main;
     background: transparent;
     color: $color-main;
     letter-spacing: 4px;
+    i {
+      transform: translateX(10px);
+    }
   }
 
   i {
@@ -115,7 +179,7 @@ nav {
   font-size: 20px;
   border: 5px solid $color-main;
   color: $color-main;
-  &:hover{
+  &:hover {
     background-color: $color-main;
     color: $color-bg;
     letter-spacing: 3px;
@@ -123,6 +187,7 @@ nav {
 }
 //skills component
 .profile {
+  margin-top: 6em;
   h1 {
     font-size: 3.5em;
   }
@@ -187,6 +252,8 @@ nav {
 
 .project {
   margin-bottom: 5em;
+  margin-top: 6em;
+
   .title {
     display: flex;
     justify-content: center;
@@ -197,8 +264,8 @@ nav {
       z-index: -1;
       color: transparent;
       -webkit-text-stroke: 2px $color-secondary;
-          font-weight: 600;
-      opacity: .5;
+      font-weight: 600;
+      opacity: 0.5;
     }
     h1 {
       font-size: 4em;
@@ -211,6 +278,9 @@ nav {
     margin: 2em;
     li {
       list-style-type: none;
+      background: #edcb5044;
+      border-radius: 50px;
+      padding: 10px 15px;
     }
   }
   .img-container {
@@ -220,13 +290,13 @@ nav {
       max-width: 350px;
     }
   }
-  .info-container{
+  .info-container {
     margin-top: 2em;
-    h3{
+    h3 {
       font-weight: 600;
     }
   }
-  .btn-container{
+  .btn-container {
     display: flex;
     justify-content: center;
   }

@@ -4,8 +4,8 @@ import { ReactComponent as Logo } from "../../logo.svg";
 
 export const Navbar = () => {
   return (
-    <div className="container-fluid">
-      <nav className="nav justify-content-between">
+    <div className="container-fluid" id="top">
+      <nav className="nav fixed-top justify-content-between">
         <Link to="/" className="nav-brand justify-content-start">
           <Logo className="logo" />
         </Link>
