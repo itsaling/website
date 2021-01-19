@@ -90,7 +90,7 @@ const initalState = {
         challenge1:
           "Some of the challenges I faced and learn to solve was how to structure my state in my GlobalContext and parsing through a nested object.",
       },
-      button: "https://moviessuggests.herokuapp.com/",
+      button: "https://itsaling.github.io/website",
     },
     {
       id: 2,
