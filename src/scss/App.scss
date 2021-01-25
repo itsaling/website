@@ -256,6 +256,7 @@ nav {
   font-size: 20px;
   border: 5px solid $color-main;
   color: $color-main;
+  margin: .5em;
   &:hover {
     background-color: $color-main;
     color: $color-bg;
@@ -273,14 +274,21 @@ nav {
     text-align: right;
     .icon-container {
       display: grid;
-      justify-items: end;
-      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+      direction: rtl;
       img {
-        max-width: 100px;
+        max-width: 70px;
         margin-top: 1em;
         @include mobile {
-          max-width: 50px;
+          max-width: 60px;
         }
+        @include mobile {
+          max-width: 50px;
+          
+        }
+      }
+      @include tablet() {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
       }
       @include mobile {
         grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));

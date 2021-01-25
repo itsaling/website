@@ -90,7 +90,10 @@ const initalState = {
         challenge1:
           "Some of the challenges I faced and learn to solve was how to structure my state in my GlobalContext and parsing through a nested object.",
       },
-      button: "https://itsaling.github.io/website",
+      button: {
+        live: "https://itsaling.github.io/website",
+        github: "https://itsaling.github.io/github",
+      },
     },
     {
       id: 2,
@@ -126,7 +129,9 @@ const initalState = {
         challenge2:
           "Additionally, the favorite component is giving a bit of an issue at the moment. This is due to how to store my data is in the App.js itself. Ideally, I want to go back and move the data to be in a context and use a reducer to handle different functionality the app might have.",
       },
-      button: "https://moviessuggests.herokuapp.com/",
+      button: {
+        live: "https://moviessuggests.herokuapp.com/",
+      },
     },
     {
       id: 3,
@@ -159,7 +164,9 @@ const initalState = {
       challenges: {
         challenge1: "",
       },
-      button: "https://react-dashboard-1.herokuapp.com/",
+      button: {
+        live: "https://react-dashboard-1.herokuapp.com/",
+      },
     },
     {
       id: 4,
@@ -192,7 +199,9 @@ const initalState = {
       challenges: {
         challenge1: "",
       },
-      button: "https://github.com/itsaling/covid-report-react",
+      button: {
+        github: "https://github.com/itsaling/covid-report-react",
+      },
     },
     {
       id: 5,
@@ -227,7 +236,10 @@ const initalState = {
         challenge2:
           "Another challenge I faced was building the website itself. There were times where I would get stuck with CSS positioning and making the site responsive. With lots of practice spent learning from other sources, I was able to accomplish my vision within the first week of development.",
       },
-      button: "https://itsaling.github.io/index.html",
+      button: {
+        live: "https://itsaling.github.io/index.html",
+        github: "github",
+      },
     },
     {
       id: 6,
@@ -261,7 +273,10 @@ const initalState = {
         challenge1:
           "Some challenges I faced while creating this site included the responsiveness of the website and some Javascript functionalities. The website is still under development right now.",
       },
-      button: "https://itsaling.github.io/devtamin.github.io/",
+      button: {
+        live: "https://itsaling.github.io/devtamin.github.io/",
+        github: "github",
+      },
     },
     {
       id: 7,
@@ -300,7 +315,9 @@ const initalState = {
         challenge3:
           "Furthermore, the JSON server had a data limitation of 10,000 contents so we had to host the JSON on two repositories.",
       },
-      button: "https://github.com/itsaling/ManeChoice",
+      button: {
+        github: "https://github.com/itsaling/ManeChoice",
+      },
     },
     {
       id: 8,
@@ -335,7 +352,9 @@ const initalState = {
         challenge1:
           "Due to the lack of experience in PHP, my team and I had a hard time creating validations of various users via their email and username.",
       },
-      button: "https://github.com/itsaling/FindMyPaw",
+      button: {
+        github: "https://github.com/itsaling/FindMyPaw",
+      },
     },
   ],
 };
