@@ -71,7 +71,7 @@ nav {
 .scroll-tab {
   margin-left: 2em;
   position: fixed;
-  top: 30%; }
+  top: 20%; }
   .scroll-tab .arrow {
     transform: translateX(1px);
     margin-bottom: 5px; }
@@ -90,7 +90,7 @@ nav {
 .scroll-top {
   margin-left: 2em;
   position: fixed;
-  bottom: 3em; }
+  bottom: 1.5em; }
   .scroll-top img {
     transform: scaleY(-1);
     transition: 0.5s all ease; }
