@@ -40,30 +40,11 @@ export const Projects = () => {
             </div>
           </div>
           <div className="btn-container">
-            {
-              Object.keys(project.button).map((buttonType) => (
-                <a href={project.button[buttonType]}>
-                  <button className="btn btn-fill">View {buttonType}</button>
-                </a>
-              ))
-              //   Object.keys(project.button) === 2 ? (
-              //     <>
-              //       <a href={project.button[buttonType].github}>
-              //         <button className="btn btn-fill">See It Live</button>
-              //       </a>
-              //     </>
-              //   ) : (
-              //     <>
-              //       <a href={project.button[buttonType].github}>
-              //         <button className="btn btn-fill">View Github</button>
-              //       </a>
-              //       <a href={project.button[buttonType].live}>
-              //         <button className="btn btn-fill">View Live</button>
-              //       </a>
-              //     </>
-              //   )
-              // )
-            }
+            {Object.keys(project.button).map((buttonType) => (
+              <a href={project.button[buttonType]} target="_blank">
+                <button className="btn btn-fill">View {buttonType}</button>
+              </a>
+            ))}
           </div>
         </div>
       ))}
