@@ -131,6 +131,7 @@ const initalState = {
       },
       button: {
         live: "https://moviessuggests.herokuapp.com/",
+        github: "https://github.com/itsaling/movies-suggestion-react",
       },
     },
     {
@@ -166,6 +167,7 @@ const initalState = {
       },
       button: {
         live: "https://react-dashboard-1.herokuapp.com/",
+        github: "https://github.com/itsaling/dashboard-react",
       },
     },
     {
@@ -238,7 +240,7 @@ const initalState = {
       },
       button: {
         live: "https://itsaling.github.io/index.html",
-        github: "github",
+        github: "https://github.com/itsaling/itsaling.github.io",
       },
     },
     {
@@ -275,7 +277,7 @@ const initalState = {
       },
       button: {
         live: "https://itsaling.github.io/devtamin.github.io/",
-        github: "github",
+        github: "https://github.com/itsaling/devtamin.github.io",
       },
     },
     {
