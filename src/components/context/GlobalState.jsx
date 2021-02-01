@@ -92,7 +92,7 @@ const initalState = {
       },
       button: {
         live: "https://itsaling.github.io/website",
-        github: "https://itsaling.github.io/github",
+        github: "https://github.com/itsaling/website",
       },
     },
     {
