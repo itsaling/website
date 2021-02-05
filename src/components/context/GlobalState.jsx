@@ -359,6 +359,63 @@ const initalState = {
       },
     },
   ],
+  designs: [
+    {
+      id: 1,
+      name: "Ragingbull Notification Mobile App",
+      images: {
+        img1:
+          "https://user-images.githubusercontent.com/54334129/106974105-20b1bc00-6722-11eb-8bdb-7c89a19e593d.png",
+      },
+    },
+    {
+      id: 3,
+      name: "Movie Suggestion Web App",
+      images: {
+        img1:
+          "https://user-images.githubusercontent.com/54334129/105059297-1ff00900-5a45-11eb-84fc-6e438e858bd6.JPG",
+        img2:
+          "https://user-images.githubusercontent.com/54334129/105059299-20889f80-5a45-11eb-9e4a-37459fe80501.JPG",
+        img3:
+          "https://user-images.githubusercontent.com/54334129/105059300-20889f80-5a45-11eb-986b-483e07b6e281.JPG",
+      },
+    },
+    {
+      id: 4,
+      name: "Dashboard E-Learning Web App",
+      images: {
+        img1:
+          "https://user-images.githubusercontent.com/54334129/106978013-6625b780-6729-11eb-8985-1232033e291e.jpg",
+        img2:
+          "https://user-images.githubusercontent.com/54334129/106982268-c15ba800-6731-11eb-9c2f-b63767b843e0.jpg",
+        img3:
+          "https://user-images.githubusercontent.com/54334129/106982270-c1f43e80-6731-11eb-8e3f-20ec19a1dbad.jpg",
+        img4:
+          "https://user-images.githubusercontent.com/54334129/106982587-5c548200-6732-11eb-8b87-0c6f9ebbd2bf.jpg",
+      },
+    },
+    {
+      id: 5,
+      name: "Devtamin E-Learning Web App",
+      images: {
+        img1: "https://itsaling.github.io/Assets/Photo/devtamin/devtamin.png",
+        img2:
+          "https://itsaling.github.io/Assets/Photo/devtamin/devtamin-content.png",
+        img3:
+          "https://itsaling.github.io/Assets/Photo/devtamin/devtamin-course.png",
+      },
+    },
+    {
+      id: 6,
+      name: "Catalyst Strength Brand",
+      images: {
+        img1:
+          "https://user-images.githubusercontent.com/54334129/106986520-8493af00-6739-11eb-94e6-5d9b59ffa3a6.png",
+        img2:
+          "https://user-images.githubusercontent.com/54334129/106984720-1dc0c680-6736-11eb-8ff4-83e075240021.JPG",
+      },
+    },
+  ],
 };
 
 export const GlobalContext = createContext(initalState);
@@ -369,6 +426,7 @@ export const GlobalProvider = ({ children }) => {
       value={{
         experiences: this.initalState.experiences,
         projects: this.initalState.projects,
+        designs: this.initalState.designs,
       }}
     >
       {children}

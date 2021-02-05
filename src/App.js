@@ -9,7 +9,9 @@ import { Projects } from "./components/layouts/projects/Projects";
 import { Footer } from "./components/Footer";
 import { Scroll } from "./components/layouts/profile/Scroll";
 import { ScrollProjects } from "./components/layouts/projects/ScrollProjects";
+import { ScrollDesigns } from "./components/layouts/designs/ScrollDesigns";
 import { ScrollTop } from "./components/ScrollTop";
+import Design from "./components/layouts/designs/Design";
 
 function App() {
   return (
@@ -35,6 +37,14 @@ function App() {
           <ScrollProjects />
           <div className="container project-container">
             <Projects />
+          </div>
+        </>
+      </Route>
+      <Route path="/designs">
+        <>
+          <ScrollDesigns />
+          <div className="container project-container">
+            <Design />
           </div>
         </>
       </Route>

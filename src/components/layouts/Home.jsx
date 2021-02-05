@@ -7,7 +7,7 @@ export const Home = () => {
       <h2>Introducing</h2>
       <h1>Latsdavanh Le, aka Aling</h1>
       <h3>Web Developer</h3>
-      <p>I love programming memes</p>
+      {/* <p>I love programming memes</p> */}
       <div className="btn-container">
         <Link to="/profile">
           <button className="btn btn-border">

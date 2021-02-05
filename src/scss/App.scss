@@ -72,7 +72,7 @@ html {
   height: 80px;
   margin: -100px 0 0;
 }
-.container{
+.container {
   max-width: 1240px;
 }
 nav {
@@ -254,9 +254,9 @@ nav {
   background-color: transparent;
   border-radius: 0;
   font-size: 20px;
-  border: 5px solid $color-main;
+  border: 2px solid $color-main;
   color: $color-main;
-  margin: .5em;
+  margin: 0.5em;
   &:hover {
     background-color: $color-main;
     color: $color-bg;
@@ -284,7 +284,6 @@ nav {
         }
         @include mobile {
           max-width: 50px;
-
         }
       }
       @include tablet() {
@@ -305,7 +304,7 @@ nav {
         margin-left: 2em;
         text-align: right;
         @include mobile {
-          margin-bottom: .3rem;
+          margin-bottom: 0.3rem;
         }
       }
       @include mobile {
@@ -346,10 +345,9 @@ nav {
         max-width: 50px;
       }
     }
-          @include mobile {
-    margin: 2em 1em;
-
-          }
+    @include mobile {
+      margin: 2em 1em;
+    }
   }
   img {
     transition: 0.5s all ease;
@@ -357,7 +355,7 @@ nav {
       transform: scale(1.2);
     }
   }
-  @include mobile{
+  @include mobile {
     padding: 0em 1em;
   }
 }
@@ -427,8 +425,48 @@ nav {
       justify-content: center;
     }
   }
-    @include mobile{
+  @include mobile {
     padding: 0em 1em;
   }
+}
 
+.design-container {
+  margin-top: 7em;
+  h1 {
+    margin-bottom: 2em;
+    font-size: 3.5em;
+  }
+  h2{
+    margin: 1em 0;
+    i{
+      color: $color-tertiary;
+      margin-left: .5em;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-gap: 1em;
+    margin-bottom: 5em;
+    img {
+      width: 100%;
+      border-radius: 10px;
+      &:hover {
+        // cursor: pointer;
+      }
+    }
+    .modal {
+      // display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+  }
 }

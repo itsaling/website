@@ -1,4 +1,3 @@
-import React, { useRef, forwardRef, createRef } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../logo.svg";
 
@@ -21,6 +20,9 @@ export const Navbar = () => {
 
           <Link to="/projects" className="nav-link">
             Projects
+          </Link>
+          <Link to="/designs" className="nav-link">
+            Designs+
           </Link>
         </div>
       </nav>

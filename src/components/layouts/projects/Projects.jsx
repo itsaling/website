@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../../context/GlobalState";
+
 export const Projects = () => {
   const { projects } = useContext(GlobalContext);
   return (
@@ -41,7 +42,11 @@ export const Projects = () => {
           </div>
           <div className="btn-container">
             {Object.keys(project.button).map((buttonType) => (
-              <a href={project.button[buttonType]} target="_blank">
+              <a
+                href={project.button[buttonType]}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button className="btn btn-fill">View {buttonType}</button>
               </a>
             ))}

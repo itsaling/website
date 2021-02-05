@@ -183,9 +183,9 @@ nav {
   background-color: transparent;
   border-radius: 0;
   font-size: 20px;
-  border: 5px solid #0f393b;
+  border: 2px solid #0f393b;
   color: #0f393b;
-  margin: .5em; }
+  margin: 0.5em; }
   .btn-fill:hover {
     background-color: #0f393b;
     color: #f6f5ef;
@@ -228,7 +228,7 @@ nav {
         text-align: right; }
         @media (max-width: 767px) {
           .profile .skills .skill-text-container p {
-            margin-bottom: .3rem; } }
+            margin-bottom: 0.3rem; } }
       @media (max-width: 767px) {
         .profile .skills .skill-text-container {
           display: block; } }
@@ -324,3 +324,32 @@ nav {
   @media (max-width: 767px) {
     .project-container {
       padding: 0em 1em; } }
+
+.design-container {
+  margin-top: 7em; }
+  .design-container h1 {
+    margin-bottom: 2em;
+    font-size: 3.5em; }
+  .design-container h2 {
+    margin: 1em 0; }
+    .design-container h2 i {
+      color: #edcb50;
+      margin-left: .5em; }
+  .design-container .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-gap: 1em;
+    margin-bottom: 5em; }
+    .design-container .grid img {
+      width: 100%;
+      border-radius: 10px; }
+    .design-container .grid .modal {
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.9); }
